@@ -36,7 +36,6 @@ const Signup = () => {
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
         try {
             const userCredential = await createUser(email, password);
             

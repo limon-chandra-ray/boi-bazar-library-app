@@ -19,6 +19,7 @@ import Moredetails from "../pages/Home/Specific/Moredetails";
 import BorrowBook from "../pages/Home/Specific/BorrowBook";
 import Donate from "../pages/Home/Specific/Donate";
 import { BaseUrl } from "../Constant/ApiDoamin";
+import AdminUploadBook from "../Dashboard/AdminUploadBook";
 
 
 
@@ -61,7 +62,7 @@ const router = createBrowserRouter([
     element: <DashboardLayout />,
     children: [
       { path: "/admin/dashboard", element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>},
-      { path: "/admin/dashboard/upload", element: <UploadBook /> },
+      { path: "/admin/dashboard/upload", element: <AdminUploadBook/> },
       { path: "/admin/dashboard/manage", element: <ManageBooks /> },
       { path: "/admin/dashboard/edit-books/:id", element: <EditBooks />,
       loader: ({ params }) => fetch(`${BaseUrl}book/${params.id}`)
@@ -76,9 +77,9 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/moredetail/:id",
+    path: "/more-detail/:id",
     element:<PrivateRoute><Moredetails></Moredetails></PrivateRoute>,
-    loader:({params})=> fetch(`${BaseUrl}moredetail/${params.id}`)  
+    loader:({params})=> fetch(`${BaseUrl}more-detail/${params.id}`)  
   },
 
 

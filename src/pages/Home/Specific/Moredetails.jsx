@@ -20,7 +20,7 @@ const Moredetails = () => {
 
   const fetchBookDetails = async () => {
     try {
-      const response = await fetch(`${BaseUrl}moredetail/${id}`);
+      const response = await fetch(`${BaseUrl}more-detail/${id}`);
       if (response.ok) {
         const data = await response.json();
         setBookDetails(data);
@@ -95,8 +95,11 @@ const Moredetails = () => {
 
   return (
     <div>
-      <Navbar className="mb-8"></Navbar>
-      <div className="max-w-lg mx-auto bg-gradient-to-r from-blue-500 to-purple-500 rounded-md overflow-hidden shadow-lg mt-24 p-6">
+      <Navbar></Navbar>
+      <h2 className="text-4xl pt-24 text-center bg-pink-200 text-teal-300 font-bold">
+        Book Details
+      </h2>
+      <div className="max-w-lg mx-auto bg-gradient-to-r from-blue-500 to-purple-500 rounded-md overflow-hidden shadow-lg pt-24 p-6">
         <img
           className="w-full h-60 object-cover rounded-t-md"
           src={image}

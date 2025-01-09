@@ -20,9 +20,9 @@ const FooterMain = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
-              <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Services</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Services</Link></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -30,10 +30,10 @@ const FooterMain = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li><Link to="/library-management" className="text-gray-400 hover:text-white transition-colors">Library Management</Link></li>
-              <li><Link to="/book-donations" className="text-gray-400 hover:text-white transition-colors">Book Donations</Link></li>
-              <li><Link to="/community-programs" className="text-gray-400 hover:text-white transition-colors">Community Programs</Link></li>
-              <li><Link to="/resources" className="text-gray-400 hover:text-white transition-colors">Educational Resources</Link></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Library Management</Link></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Book Donations</Link></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Community Programs</Link></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Educational Resources</Link></li>
             </ul>
           </div>
 
@@ -41,7 +41,7 @@ const FooterMain = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <p className="text-gray-400 mb-2">123 Library Street, Booktown</p>
-            <p className="text-gray-400 mb-2">Phone: (123) 456-7890</p>
+            <p className="text-gray-400 mb-2">Phone: (+880) 01797856496</p>
             <p className="text-gray-400 mb-4">Email: info@librarymanagement.com</p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors"><FaFacebookF /></a>
@@ -58,8 +58,8 @@ const FooterMain = () => {
             © 2024 Library Management System. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
-            <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-sm mr-4">Privacy Policy</Link>
-            <Link to="/terms-of-service" className="text-gray-400 hover:text-white transition-colors text-sm">Terms of Service</Link>
+            <Link to="/" className="text-gray-400 hover:text-white transition-colors text-sm mr-4">Privacy Policy</Link>
+            <Link to="/" className="text-gray-400 hover:text-white transition-colors text-sm">Terms of Service</Link>
           </div>
         </div>
       </div>

@@ -39,14 +39,14 @@ const SideBar = () => {
               </p>
             </Sidebar.Item>
 
-            <Sidebar.Item
+            {/* <Sidebar.Item
               href="/admin/dashboard/manage"
               icon={HiInbox}
             >
               <p>
                 ManageBooks
               </p>
-            </Sidebar.Item>
+            </Sidebar.Item> */}
             
             
            

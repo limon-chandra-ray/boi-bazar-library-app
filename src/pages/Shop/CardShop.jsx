@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 
 const CardShop = ({ brand }) => {
   const { name, author, rating, category, image,_id } = brand;
-  
-
   return (
     <div className="flex justify-center">
       <div className="max-w-md rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:scale-105">
@@ -21,17 +19,7 @@ const CardShop = ({ brand }) => {
               Rating: {rating}
             </div>
             <Link
-              to="https://www.audisankara.ac.in/has/pdf/DATA%20STRUCTURE.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full transition-colors duration-300"
-            >
-              Read me
-            </Link>
-
-            <Link
-             to={`/moredetail/${_id}`}
-              target="_blank"
+             to={`/more-detail/${_id}`}
               rel="noopener noreferrer"
               className="bg-teal-600 hover:bg-sky-700 text-white py-2 px-4 rounded-full transition-colors duration-300"
             >
